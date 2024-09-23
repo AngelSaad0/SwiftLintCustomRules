@@ -7,15 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0A79E86580851B6ACF4E6675 /* Pods_SwiftLintCustomRules.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D1B0E48288CD32BD186649A0 /* Pods_SwiftLintCustomRules.framework */; };
 		A9399B2B2C9881E400666606 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9399B2A2C9881E400666606 /* AppDelegate.swift */; };
 		A9399B2D2C9881E400666606 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9399B2C2C9881E400666606 /* SceneDelegate.swift */; };
 		A9399B2F2C9881E400666606 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9399B2E2C9881E400666606 /* ViewController.swift */; };
 		A9399B322C9881E400666606 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A9399B302C9881E400666606 /* Main.storyboard */; };
 		A9399B342C9881E600666606 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A9399B332C9881E600666606 /* Assets.xcassets */; };
 		A9399B372C9881E600666606 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A9399B352C9881E600666606 /* LaunchScreen.storyboard */; };
+		A9399B402C98876100666606 /* swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = A9399B3F2C98876000666606 /* swiftlint.yml */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		018429840AE093E31E56B0EE /* Pods-SwiftLintCustomRules.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftLintCustomRules.debug.xcconfig"; path = "Target Support Files/Pods-SwiftLintCustomRules/Pods-SwiftLintCustomRules.debug.xcconfig"; sourceTree = "<group>"; };
 		A9399B272C9881E400666606 /* SwiftLintCustomRules.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftLintCustomRules.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A9399B2A2C9881E400666606 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A9399B2C2C9881E400666606 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +27,9 @@
 		A9399B332C9881E600666606 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A9399B362C9881E600666606 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A9399B382C9881E600666606 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A9399B3F2C98876000666606 /* swiftlint.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.yaml; path = swiftlint.yml; sourceTree = SOURCE_ROOT; };
+		D1B0E48288CD32BD186649A0 /* Pods_SwiftLintCustomRules.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftLintCustomRules.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E492E16F510AC14518CFE85F /* Pods-SwiftLintCustomRules.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftLintCustomRules.release.xcconfig"; path = "Target Support Files/Pods-SwiftLintCustomRules/Pods-SwiftLintCustomRules.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +37,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0A79E86580851B6ACF4E6675 /* Pods_SwiftLintCustomRules.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3AD8E19ACDEA51DA471EE75F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				018429840AE093E31E56B0EE /* Pods-SwiftLintCustomRules.debug.xcconfig */,
+				E492E16F510AC14518CFE85F /* Pods-SwiftLintCustomRules.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		9463A85C330A631DF358B0F7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D1B0E48288CD32BD186649A0 /* Pods_SwiftLintCustomRules.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		A9399B1E2C9881E400666606 = {
 			isa = PBXGroup;
 			children = (
 				A9399B292C9881E400666606 /* SwiftLintCustomRules */,
 				A9399B282C9881E400666606 /* Products */,
+				3AD8E19ACDEA51DA471EE75F /* Pods */,
+				9463A85C330A631DF358B0F7 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,6 +82,7 @@
 		A9399B292C9881E400666606 /* SwiftLintCustomRules */ = {
 			isa = PBXGroup;
 			children = (
+				A9399B3F2C98876000666606 /* swiftlint.yml */,
 				A9399B2A2C9881E400666606 /* AppDelegate.swift */,
 				A9399B2C2C9881E400666606 /* SceneDelegate.swift */,
 				A9399B2E2C9881E400666606 /* ViewController.swift */,
@@ -74,6 +101,8 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A9399B3B2C9881E600666606 /* Build configuration list for PBXNativeTarget "SwiftLintCustomRules" */;
 			buildPhases = (
+				1A13F19F559724374E4A8EC2 /* [CP] Check Pods Manifest.lock */,
+				A9399B3E2C98831C00666606 /* ShellScript */,
 				A9399B232C9881E400666606 /* Sources */,
 				A9399B242C9881E400666606 /* Frameworks */,
 				A9399B252C9881E400666606 /* Resources */,
@@ -126,12 +155,57 @@
 			buildActionMask = 2147483647;
 			files = (
 				A9399B372C9881E600666606 /* LaunchScreen.storyboard in Resources */,
+				A9399B402C98876100666606 /* swiftlint.yml in Resources */,
 				A9399B342C9881E600666606 /* Assets.xcassets in Resources */,
 				A9399B322C9881E400666606 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1A13F19F559724374E4A8EC2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SwiftLintCustomRules-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A9399B3E2C98831C00666606 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "export PATH=\"$PATH:/opt/homebrew/bin\"\nif which swiftlint > /dev/null; then\n  swiftlint\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		A9399B232C9881E400666606 /* Sources */ = {
@@ -203,7 +277,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
-				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -266,7 +340,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -287,6 +361,7 @@
 		};
 		A9399B3C2C9881E600666606 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 018429840AE093E31E56B0EE /* Pods-SwiftLintCustomRules.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -314,6 +389,7 @@
 		};
 		A9399B3D2C9881E600666606 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E492E16F510AC14518CFE85F /* Pods-SwiftLintCustomRules.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
